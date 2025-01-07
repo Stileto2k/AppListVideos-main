@@ -16,7 +16,7 @@ export default function AuthScreen({ navigation }) {
       } else {
         await signInWithEmailAndPassword(auth, userEmail, userPassword);
       }
-      navigation.navigate('VideoUpload');
+      
     } catch (err) {
       const errorMsg = err.message;
 
